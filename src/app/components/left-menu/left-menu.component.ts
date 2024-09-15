@@ -1,12 +1,14 @@
 import {Component, OnInit} from '@angular/core';
 import {MenuItem} from "primeng/api";
 import {PanelMenuModule} from "primeng/panelmenu";
+import {MenuModule} from "primeng/menu";
 
 @Component({
   selector: 'app-left-menu',
   standalone: true,
   imports: [
-    PanelMenuModule
+    PanelMenuModule,
+    MenuModule
   ],
   templateUrl: './left-menu.component.html',
   styleUrl: './left-menu.component.css'
@@ -17,81 +19,30 @@ export class LeftMenuComponent implements OnInit {
   ngOnInit() {
     this.items = [
       {
-        label: 'Files',
-        icon: 'pi pi-file',
-        items: [
-          {
-            label: 'Documents',
-            icon: 'pi pi-file',
-            items: [
-              {
-                label: 'Invoices',
-                icon: 'pi pi-file-pdf',
-                items: [
-                  {
-                    label: 'Pending',
-                    icon: 'pi pi-stop'
-                  },
-                  {
-                    label: 'Paid',
-                    icon: 'pi pi-check-circle'
-                  }
-                ]
-              },
-              {
-                label: 'Clients',
-                icon: 'pi pi-users'
-              }
-            ]
-          },
-          {
-            label: 'Images',
-            icon: 'pi pi-image',
-            items: [
-              {
-                label: 'Logos',
-                icon: 'pi pi-image'
-              }
-            ]
-          }
-        ]
+        label: 'Сводная статистика'
       },
       {
-        label: 'Cloud',
-        icon: 'pi pi-cloud',
-        items: [
-          {
-            label: 'Upload',
-            icon: 'pi pi-cloud-upload'
-          },
-          {
-            label: 'Download',
-            icon: 'pi pi-cloud-download'
-          },
-          {
-            label: 'Sync',
-            icon: 'pi pi-refresh'
-          }
-        ]
+        label: 'Посещаемость',
       },
       {
-        label: 'Devices',
-        icon: 'pi pi-desktop',
-        items: [
-          {
-            label: 'Phone',
-            icon: 'pi pi-mobile'
-          },
-          {
-            label: 'Desktop',
-            icon: 'pi pi-desktop'
-          },
-          {
-            label: 'Tablet',
-            icon: 'pi pi-tablet'
-          }
-        ]
+        label: 'Рекламные кампании',
+      },
+      {
+        label: 'События',
+      },
+      {
+        label: 'Поисковики',
+      },
+      {
+        label: 'Ссылающиеся сайты',
+      },
+      {
+        label: 'Посетители',
+      },
+      {
+        label: 'Кто на сайте',
       }
-    ]
+    ];
   }
 }
+
