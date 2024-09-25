@@ -1,1 +1,23 @@
-<p>list-company-page works!</p>
+<p-table [value]="adv" [tableStyle]="{ 'min-width': '50rem' }">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Uuid</th>
+      <th>referer1</th>
+      <th>referer2</th>
+      <th>Начало</th>
+      <th>Окончание</th>
+      <th>Зашли (сессий) сегодня</th>
+      <th>Зашли (сессий) всего</th>
+      <th>Всего событий сегодня</th>
+      <th>Всего событий</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-product>
+    <tr>
+      <td>{{ product.code }}</td>
+      <td>{{ product.name }}</td>
+      <td>{{ product.category }}</td>
+      <td>{{ product.quantity }}</td>
+    </tr>
+  </ng-template>
+</p-table>
