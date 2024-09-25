@@ -1,1 +1,94 @@
-<p>hits-page works!</p>
+<div class="field grid">
+  <label for="id-user" class="col-fixed">ID Пользователя:</label>
+  <div class="col">
+    <input id="id-user" pInputText [(ngModel)]="filterData.userId" type="text"
+           class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary">
+  </div>
+</div>
+
+<div class="field grid">
+  <label for="login-user" class="col-fixed">Логин</label>
+  <div class="col">
+    <input id="login-user" pInputText [(ngModel)]="filterData.userId" type="text"
+           class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary">
+  </div>
+</div>
+
+<div class="p-grid">
+  <!--  <div class="p-col-12 p-md-6 p-lg-4">-->
+  <!--        <span class="p-float-label">-->
+  <!--            <input id="id-user" pInputText [(ngModel)]="filterData.userId">-->
+  <!--            <label for="id-user">ID, логин, имя, фамилия:</label>-->
+  <!--        </span>-->
+  <!--  </div>-->
+
+  <div class="p-col-12 p-md-6 p-lg-4">
+        <span class="p-float-label">
+            <input id="id-hit" pInputText [(ngModel)]="filterData.hitId">
+            <label for="id-hit">ID хита:</label>
+        </span>
+  </div>
+
+  <div class="p-col-12 p-md-6 p-lg-4">
+        <span class="p-float-label">
+            <p-dropdown id="date" [(ngModel)]="filterData.date" [options]="dateOptions"></p-dropdown>
+            <label for="date">Дата</label>
+        </span>
+  </div>
+
+  <div class="p-col-12 p-md-6 p-lg-4">
+        <span class="p-float-label">
+            <input id="id-session" pInputText [(ngModel)]="filterData.sessionId">
+            <label for="id-session">ID сессии:</label>
+        </span>
+  </div>
+
+  <div class="p-col-12 p-md-6 p-lg-4">
+        <span class="p-float-label">
+            <input id="visitor-id" pInputText [(ngModel)]="filterData.visitorId">
+            <label for="visitor-id">ID посетителя:</label>
+        </span>
+  </div>
+
+  <div class="p-col-12 p-md-6 p-lg-4">
+        <span class="p-float-label">
+            <p-dropdown id="registered" [(ngModel)]="filterData.registered"
+                        [options]="registrationOptions"></p-dropdown>
+            <label for="registered">Зарегистрирован:</label>
+        </span>
+  </div>
+
+  <div class="p-col-12 p-md-6 p-lg-4">
+        <span class="p-float-label">
+            <p-dropdown id="registered" [(ngModel)]="filterData.registered"
+                        [options]="registrationOptions"></p-dropdown>
+            <label for="registered">Впервые/вернулся:</label>
+        </span>
+  </div>
+
+  <div class="p-col-12 p-md-6 p-lg-4">
+        <span class="p-float-label">
+            <input id="visitor-id" pInputText [(ngModel)]="filterData.visitorId">
+            <label for="visitor-id">IP адрес:</label>
+        </span>
+  </div>
+
+  <!-- Аналогичные блоки для всех остальных полей -->
+
+  <div class="p-col-12 p-md-6 p-lg-4">
+        <span class="p-float-label">
+            <p-dropdown id="blacklist" [(ngModel)]="filterData.blacklist" [options]="blacklistOptions"></p-dropdown>
+            <label for="blacklist">Попал в стоп-лист:</label>
+        </span>
+  </div>
+
+  <div class="p-col-12">
+    <p-radioButton name="logic" value="and" [(ngModel)]="filterData.logic"> И</p-radioButton>
+    <p-radioButton name="logic" value="or" [(ngModel)]="filterData.logic"> ИЛИ</p-radioButton>
+  </div>
+
+  <div class="p-col-12">
+    <button pButton label="Найти" icon="pi pi-search"></button>
+    <button pButton label="Отменить" icon="pi pi-times" class="p-button-secondary"></button>
+  </div>
+</div>
