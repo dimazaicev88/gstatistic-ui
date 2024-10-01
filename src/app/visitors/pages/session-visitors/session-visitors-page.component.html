@@ -1,1 +1,47 @@
-<p>session-visitors-page works!</p>
+<p-table
+  [value]="sessions"
+  [lazy]="true"
+  [paginator]="true"
+  [rows]="rowsPerPage"
+  selectionMode="single"
+  [totalRecords]="totalRecords"
+  [loading]="isLoading"
+  [showCurrentPageReport]="true"
+  (onRowSelect)="onRowSelect($event)"
+  currentPageReportTemplate="Showing {totalRecords} entries"
+  [rowsPerPageOptions]="[rowsPerPage, 10,20,50,100]"
+  (onPage)="onPageChange($event)"
+  dataKey="uuid"
+  styleClass="p-datatable-sm p-datatable-gridlines">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>uuid</th>
+      <th>начало</th>
+      <th>конец</th>
+      <th>длительность сессии</th>
+      <th>ip адрес</th>
+      <th>хитов</th>
+      <th>событий</th>
+      <th>рекламная кампания</th>
+      <th>первая страница</th>
+      <th>последняя страница</th>
+      <th>страна</th>
+      <th>город</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-session>
+    <tr [pSelectableRow]="session">
+      <td>{{ session.uuid }}</td>
+      <td>{{ session.dateFirst }}</td>
+      <td>{{ session.dateLast }}</td>
+      <td>0</td>
+      <td>{{ session.hits }}</td>
+      <td>{{ session.events }}</td>
+      <td>{{ session.advUuid }}</td>
+      <td>{{ session.urlTo }}</td>
+      <td>{{ session.urlLast }}</td>
+      <td>{{ session.countryId }}</td>
+      <td></td>
+    </tr>
+  </ng-template>
+</p-table>

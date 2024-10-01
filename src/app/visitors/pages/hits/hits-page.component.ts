@@ -8,7 +8,6 @@ import {TableModule, TablePageEvent, TableRowSelectEvent} from "primeng/table";
 import {HitService} from "../../services/hit.service";
 import {RequestResult} from "../../../shared/interfaces/request";
 import {Hit} from "../../interfaces/hit";
-import {MsgService} from "../../../shared/services/msg.service";
 import {MessageService} from "primeng/api";
 import {ToastModule} from "primeng/toast";
 
