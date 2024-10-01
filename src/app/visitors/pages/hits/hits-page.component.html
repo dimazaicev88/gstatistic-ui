@@ -1,94 +1,182 @@
-<div class="field grid">
-  <label for="id-user" class="col-fixed">ID Пользователя:</label>
-  <div class="col">
-    <input id="id-user" pInputText [(ngModel)]="filterData.userId" type="text"
-           class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary">
-  </div>
-</div>
+<!--&lt;!&ndash;<div class="field grid">&ndash;&gt;-->
+<!--&lt;!&ndash;  <label for="id-user" class="col-fixed">ID Пользователя:</label>&ndash;&gt;-->
+<!--&lt;!&ndash;  <div class="col">&ndash;&gt;-->
+<!--&lt;!&ndash;    <input id="id-user" pInputText [(ngModel)]="filterData.userId" type="text"&ndash;&gt;-->
+<!--&lt;!&ndash;           class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary">&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
 
-<div class="field grid">
-  <label for="login-user" class="col-fixed">Логин</label>
-  <div class="col">
-    <input id="login-user" pInputText [(ngModel)]="filterData.userId" type="text"
-           class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary">
-  </div>
-</div>
+<!--&lt;!&ndash;<div class="field grid">&ndash;&gt;-->
+<!--&lt;!&ndash;  <label for="login-user" class="col-fixed">Логин</label>&ndash;&gt;-->
+<!--&lt;!&ndash;  <div class="col">&ndash;&gt;-->
+<!--&lt;!&ndash;    <input id="login-user" pInputText [(ngModel)]="filterData.userId" type="text"&ndash;&gt;-->
+<!--&lt;!&ndash;           class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary">&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
 
-<div class="p-grid">
-  <!--  <div class="p-col-12 p-md-6 p-lg-4">-->
-  <!--        <span class="p-float-label">-->
-  <!--            <input id="id-user" pInputText [(ngModel)]="filterData.userId">-->
-  <!--            <label for="id-user">ID, логин, имя, фамилия:</label>-->
-  <!--        </span>-->
-  <!--  </div>-->
+<!--&lt;!&ndash;<div class="p-grid">&ndash;&gt;-->
+<!--&lt;!&ndash;  &lt;!&ndash;  <div class="p-col-12 p-md-6 p-lg-4">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;  &lt;!&ndash;        <span class="p-float-label">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;  &lt;!&ndash;            <input id="id-user" pInputText [(ngModel)]="filterData.userId">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;  &lt;!&ndash;            <label for="id-user">ID, логин, имя, фамилия:</label>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;  &lt;!&ndash;        </span>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;  &lt;!&ndash;  </div>&ndash;&gt;&ndash;&gt;-->
 
-  <div class="p-col-12 p-md-6 p-lg-4">
-        <span class="p-float-label">
-            <input id="id-hit" pInputText [(ngModel)]="filterData.hitId">
-            <label for="id-hit">ID хита:</label>
-        </span>
-  </div>
+<!--&lt;!&ndash;  <div class="p-col-12 p-md-6 p-lg-4">&ndash;&gt;-->
+<!--&lt;!&ndash;        <span class="p-float-label">&ndash;&gt;-->
+<!--&lt;!&ndash;            <input id="id-hit" pInputText [(ngModel)]="filterData.hitId">&ndash;&gt;-->
+<!--&lt;!&ndash;            <label for="id-hit">ID хита:</label>&ndash;&gt;-->
+<!--&lt;!&ndash;        </span>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
 
-  <div class="p-col-12 p-md-6 p-lg-4">
-        <span class="p-float-label">
-            <p-dropdown id="date" [(ngModel)]="filterData.date" [options]="dateOptions"></p-dropdown>
-            <label for="date">Дата</label>
-        </span>
-  </div>
+<!--&lt;!&ndash;  <div class="p-col-12 p-md-6 p-lg-4">&ndash;&gt;-->
+<!--&lt;!&ndash;        <span class="p-float-label">&ndash;&gt;-->
+<!--&lt;!&ndash;            <p-dropdown id="date" [(ngModel)]="filterData.date" [options]="dateOptions"></p-dropdown>&ndash;&gt;-->
+<!--&lt;!&ndash;            <label for="date">Дата</label>&ndash;&gt;-->
+<!--&lt;!&ndash;        </span>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
 
-  <div class="p-col-12 p-md-6 p-lg-4">
-        <span class="p-float-label">
-            <input id="id-session" pInputText [(ngModel)]="filterData.sessionId">
-            <label for="id-session">ID сессии:</label>
-        </span>
-  </div>
+<!--&lt;!&ndash;  <div class="p-col-12 p-md-6 p-lg-4">&ndash;&gt;-->
+<!--&lt;!&ndash;        <span class="p-float-label">&ndash;&gt;-->
+<!--&lt;!&ndash;            <input id="id-session" pInputText [(ngModel)]="filterData.sessionId">&ndash;&gt;-->
+<!--&lt;!&ndash;            <label for="id-session">ID сессии:</label>&ndash;&gt;-->
+<!--&lt;!&ndash;        </span>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
 
-  <div class="p-col-12 p-md-6 p-lg-4">
-        <span class="p-float-label">
-            <input id="visitor-id" pInputText [(ngModel)]="filterData.visitorId">
-            <label for="visitor-id">ID посетителя:</label>
-        </span>
-  </div>
+<!--&lt;!&ndash;  <div class="p-col-12 p-md-6 p-lg-4">&ndash;&gt;-->
+<!--&lt;!&ndash;        <span class="p-float-label">&ndash;&gt;-->
+<!--&lt;!&ndash;            <input id="visitor-id" pInputText [(ngModel)]="filterData.visitorId">&ndash;&gt;-->
+<!--&lt;!&ndash;            <label for="visitor-id">ID посетителя:</label>&ndash;&gt;-->
+<!--&lt;!&ndash;        </span>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
 
-  <div class="p-col-12 p-md-6 p-lg-4">
-        <span class="p-float-label">
-            <p-dropdown id="registered" [(ngModel)]="filterData.registered"
-                        [options]="registrationOptions"></p-dropdown>
-            <label for="registered">Зарегистрирован:</label>
-        </span>
-  </div>
+<!--&lt;!&ndash;  <div class="p-col-12 p-md-6 p-lg-4">&ndash;&gt;-->
+<!--&lt;!&ndash;        <span class="p-float-label">&ndash;&gt;-->
+<!--&lt;!&ndash;            <p-dropdown id="registered" [(ngModel)]="filterData.registered"&ndash;&gt;-->
+<!--&lt;!&ndash;                        [options]="registrationOptions"></p-dropdown>&ndash;&gt;-->
+<!--&lt;!&ndash;            <label for="registered">Зарегистрирован:</label>&ndash;&gt;-->
+<!--&lt;!&ndash;        </span>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
 
-  <div class="p-col-12 p-md-6 p-lg-4">
-        <span class="p-float-label">
-            <p-dropdown id="registered" [(ngModel)]="filterData.registered"
-                        [options]="registrationOptions"></p-dropdown>
-            <label for="registered">Впервые/вернулся:</label>
-        </span>
-  </div>
+<!--&lt;!&ndash;  <div class="p-col-12 p-md-6 p-lg-4">&ndash;&gt;-->
+<!--&lt;!&ndash;        <span class="p-float-label">&ndash;&gt;-->
+<!--&lt;!&ndash;            <p-dropdown id="registered" [(ngModel)]="filterData.registered"&ndash;&gt;-->
+<!--&lt;!&ndash;                        [options]="registrationOptions"></p-dropdown>&ndash;&gt;-->
+<!--&lt;!&ndash;            <label for="registered">Впервые/вернулся:</label>&ndash;&gt;-->
+<!--&lt;!&ndash;        </span>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
 
-  <div class="p-col-12 p-md-6 p-lg-4">
-        <span class="p-float-label">
-            <input id="visitor-id" pInputText [(ngModel)]="filterData.visitorId">
-            <label for="visitor-id">IP адрес:</label>
-        </span>
-  </div>
+<!--&lt;!&ndash;  <div class="p-col-12 p-md-6 p-lg-4">&ndash;&gt;-->
+<!--&lt;!&ndash;        <span class="p-float-label">&ndash;&gt;-->
+<!--&lt;!&ndash;            <input id="visitor-id" pInputText [(ngModel)]="filterData.visitorId">&ndash;&gt;-->
+<!--&lt;!&ndash;            <label for="visitor-id">IP адрес:</label>&ndash;&gt;-->
+<!--&lt;!&ndash;        </span>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
 
-  <!-- Аналогичные блоки для всех остальных полей -->
+<!--&lt;!&ndash; Аналогичные блоки для всех остальных полей &ndash;&gt;-->
 
-  <div class="p-col-12 p-md-6 p-lg-4">
-        <span class="p-float-label">
-            <p-dropdown id="blacklist" [(ngModel)]="filterData.blacklist" [options]="blacklistOptions"></p-dropdown>
-            <label for="blacklist">Попал в стоп-лист:</label>
-        </span>
-  </div>
+<!--&lt;!&ndash;  <div class="p-col-12 p-md-6 p-lg-4">&ndash;&gt;-->
+<!--&lt;!&ndash;        <span class="p-float-label">&ndash;&gt;-->
+<!--&lt;!&ndash;            <p-dropdown id="blacklist" [(ngModel)]="filterData.blacklist" [options]="blacklistOptions"></p-dropdown>&ndash;&gt;-->
+<!--&lt;!&ndash;            <label for="blacklist">Попал в стоп-лист:</label>&ndash;&gt;-->
+<!--&lt;!&ndash;        </span>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
 
-  <div class="p-col-12">
-    <p-radioButton name="logic" value="and" [(ngModel)]="filterData.logic"> И</p-radioButton>
-    <p-radioButton name="logic" value="or" [(ngModel)]="filterData.logic"> ИЛИ</p-radioButton>
-  </div>
+<!--&lt;!&ndash;  <div class="p-col-12">&ndash;&gt;-->
+<!--&lt;!&ndash;    <p-radioButton name="logic" value="and" [(ngModel)]="filterData.logic"> И</p-radioButton>&ndash;&gt;-->
+<!--&lt;!&ndash;    <p-radioButton name="logic" value="or" [(ngModel)]="filterData.logic"> ИЛИ</p-radioButton>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
 
-  <div class="p-col-12">
-    <button pButton label="Найти" icon="pi pi-search"></button>
-    <button pButton label="Отменить" icon="pi pi-times" class="p-button-secondary"></button>
-  </div>
-</div>
+<!--&lt;!&ndash;  <div class="p-col-12">&ndash;&gt;-->
+<!--&lt;!&ndash;    <button pButton label="Найти" icon="pi pi-search"></button>&ndash;&gt;-->
+<!--&lt;!&ndash;    <button pButton label="Отменить" icon="pi pi-times" class="p-button-secondary"></button>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+<!--<p-toast/>-->
+<!--<p-table-->
+<!--  [value]="hits"-->
+<!--  [lazy]="true"-->
+<!--  [paginator]="true"-->
+<!--  [rows]="rowsPerPage"-->
+<!--  [totalRecords]="totalRecords"-->
+<!--  [loading]="isLoading"-->
+<!--  [showCurrentPageReport]="true"-->
+<!--  currentPageReportTemplate="Showing {totalRecords} entries"-->
+<!--  [rowsPerPageOptions]="[rowsPerPage, 10,20,50,100]"-->
+<!--  (onPage)="onPageChange($event)"-->
+<!--  dataKey="uuid"-->
+<!--  styleClass="p-datatable-sm p-datatable-gridlines">-->
+<!--  <ng-template pTemplate="header">-->
+<!--    <tr>-->
+<!--      <th>UID</th>-->
+<!--      <th>Сессия</th>-->
+<!--      <th>Дата</th>-->
+<!--      <th>ID посетителя</th>-->
+<!--      <th>IP адрес</th>-->
+<!--      <th>Страна</th>-->
+<!--      <th>Город</th>-->
+<!--      <th>Страница</th>-->
+<!--      <th>Сайт</th>-->
+<!--    </tr>-->
+<!--  </ng-template>-->
+<!--  <ng-template pTemplate="body" let-hit>-->
+<!--    <tr>-->
+<!--      <td>{{ hit.uuid }}</td>-->
+<!--      <td>{{ hit.sessionUuid }}</td>-->
+<!--      <td>{{ hit.dateHit }}</td>-->
+<!--      <td>{{ hit.userId }}</td>-->
+<!--      <td>{{ hit.ip }}</td>-->
+<!--      <td>{{ hit.countryName }}</td>-->
+<!--      <td>{{ hit.countryId }}</td>-->
+<!--      <td>{{ hit.url }}</td>-->
+<!--      <td>{{ hit.siteId }}</td>-->
+<!--    </tr>-->
+<!--  </ng-template>-->
+<!--</p-table>-->
+
+
+<p-toast/>
+<p-table
+  [value]="hits"
+  [lazy]="true"
+  [paginator]="true"
+  [rows]="rowsPerPage"
+  selectionMode="single"
+  [(selection)]="selectedHit"
+  [totalRecords]="totalRecords"
+  [loading]="isLoading"
+  [showCurrentPageReport]="true"
+  (onRowSelect)="onRowSelect($event)"
+  currentPageReportTemplate="Showing {totalRecords} entries"
+  [rowsPerPageOptions]="[rowsPerPage, 10,20,50,100]"
+  (onPage)="onPageChange($event)"
+  dataKey="uuid"
+  styleClass="p-datatable-sm p-datatable-gridlines">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>uuid</th>
+      <th>сессия</th>
+      <th>дата</th>
+      <th>id посетителя</th>
+      <th>ip адрес</th>
+      <th>страна</th>
+      <th>город</th>
+      <th>страница</th>
+      <th>сайт</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-hit>
+    <tr [pSelectableRow]="hit">
+      <td>{{ hit.uuid }}</td>
+      <td>{{ hit.sessionUuid }}</td>
+      <td>{{ hit.dateHit }}</td>
+      <td>{{ hit.userId }}</td>
+      <td>{{ hit.ip }}</td>
+      <td>{{ hit.countryName }}</td>
+      <td>{{ hit.countryId }}</td>
+      <td>{{ hit.url }}</td>
+      <td>{{ hit.siteId }}</td>
+    </tr>
+  </ng-template>
+</p-table>
