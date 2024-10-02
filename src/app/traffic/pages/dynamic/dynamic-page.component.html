@@ -1,5 +1,5 @@
 <p-table
-  [value]="[]"
+  [value]="visits"
   [lazy]="true"
   [paginator]="true"
   [rows]="rowsPerPage"
@@ -14,24 +14,27 @@
   styleClass="p-datatable-sm p-datatable-gridlines">
   <ng-template pTemplate="header">
     <tr>
-      <th>UserAgent</th>
+      <th>дата</th>
+      <th>День недели</th>
+      <th>Хитов</th>
+      <th>Хостов</th>
       <th>Сессий</th>
-      <th>Добавляемая маска [%_]</th>
-      <th>Поисковик</th>
-      <th>Браузер</th>
+      <th>Событий</th>
+      <th>Посетителей</th>
+      <th>Новых</th>
     </tr>
   </ng-template>
   <ng-template pTemplate="body" let-visits>
     <tr>
-      <!--      <td>{{ hit.uuid }}</td>-->
-      <!--      <td>{{ hit.sessionUuid }}</td>-->
-      <!--      <td>{{ hit.dateHit }}</td>-->
-      <!--      <td>{{ hit.userId }}</td>-->
-      <!--      <td>{{ hit.ip }}</td>-->
-      <!--      <td>{{ hit.countryName }}</td>-->
-      <!--      <td>{{ hit.countryId }}</td>-->
-      <!--      <td>{{ hit.url }}</td>-->
-      <!--      <td>{{ hit.siteId }}</td>-->
+<!--      <td>{{ hit.uuid }}</td>-->
+<!--      <td>{{ hit.sessionUuid }}</td>-->
+<!--      <td>{{ hit.dateHit }}</td>-->
+<!--      <td>{{ hit.userId }}</td>-->
+<!--      <td>{{ hit.ip }}</td>-->
+<!--      <td>{{ hit.countryName }}</td>-->
+<!--      <td>{{ hit.countryId }}</td>-->
+<!--      <td>{{ hit.url }}</td>-->
+<!--      <td>{{ hit.siteId }}</td>-->
     </tr>
   </ng-template>
 </p-table>

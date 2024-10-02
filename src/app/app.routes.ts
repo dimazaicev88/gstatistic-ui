@@ -10,8 +10,8 @@ export const routes: Routes = [
   //Traffic
   {
     path: 'traffic/dynamic',
-    loadComponent: () => import('./traffic/pages/dynamic/dinamic-page.component')
-      .then(mod => mod.DinamicPageComponent),
+    loadComponent: () => import('./traffic/pages/dynamic/dynamic-page.component')
+      .then(mod => mod.DynamicPageComponent),
   },
   {
     path: 'traffic/rubric-and-pages',
@@ -114,26 +114,23 @@ export const routes: Routes = [
       .then(mod => mod.ListVisitorsPageComponent),
   },
   {
-    path: '/visitors/session-visitors',
+    path: 'visitors/session-visitors',
     loadComponent: () => import('./visitors/pages/session-visitors/session-visitors-page.component')
       .then(mod => mod.SessionVisitorsPageComponent),
   },
   {
-    path: '/visitors/hits',
+    path: 'visitors/hits',
     loadComponent: () => import('./visitors/pages/hits/hits-page.component')
       .then(mod => mod.HitsPageComponent),
   },
   {
-    path: '/visitors/stop-list',
+    path: 'visitors/stop-list',
     loadComponent: () => import('./visitors/pages/stop-list/stop-list-page.component')
       .then(mod => mod.StopListPageComponent),
   },
   {
     path: 'online',
-    loadComponent: () => import('./u')
-      .then(mod => mod.StopListPageComponent),
-  },
-"/"
-}
-]
-;
+    loadComponent: () => import('./online/pages/online/online-page.component')
+      .then(mod => mod.OnlinePageComponent),
+  }
+];

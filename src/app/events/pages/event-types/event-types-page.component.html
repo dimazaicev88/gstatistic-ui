@@ -1,1 +1,56 @@
-<p>event-types-page works!</p>
+<p-tabView>
+  <p-tabPanel header="Список">
+    <p-table
+      [value]="[]"
+      [lazy]="true"
+      [paginator]="true"
+      [rows]="rowsPerPage"
+      selectionMode="single"
+      [totalRecords]="totalRecords"
+      [loading]="isLoading"
+      [showCurrentPageReport]="true"
+      currentPageReportTemplate="Showing {totalRecords} entries"
+      [rowsPerPageOptions]="[rowsPerPage, 10,20,50,100]"
+      (onPage)="onPageChange($event)"
+      dataKey="uuid"
+      styleClass="p-datatable-sm p-datatable-gridlines">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>uuid</th>
+          <th>Наименование</th>
+          <th>event1</th>
+          <th>event2</th>
+          <th>Сегодня</th>
+          <th>Вчера</th>
+          <th>Позавчера</th>
+          <th>Всего</th>
+          <th>Первое</th>
+          <th>Последнее</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-visits>
+        <tr>
+          <!--      <td>{{ hit.uuid }}</td>-->
+          <!--      <td>{{ hit.sessionUuid }}</td>-->
+          <!--      <td>{{ hit.dateHit }}</td>-->
+          <!--      <td>{{ hit.userId }}</td>-->
+          <!--      <td>{{ hit.ip }}</td>-->
+          <!--      <td>{{ hit.countryName }}</td>-->
+          <!--      <td>{{ hit.countryId }}</td>-->
+          <!--      <td>{{ hit.url }}</td>-->
+          <!--      <td>{{ hit.siteId }}</td>-->
+        </tr>
+      </ng-template>
+    </p-table>
+
+  </p-tabPanel>
+  <p-tabPanel header="Круговая диаграмма">
+
+  </p-tabPanel>
+  <p-tabPanel header="Хиты">
+
+  </p-tabPanel>
+  <p-tabPanel header="Графики">
+
+  </p-tabPanel>
+</p-tabView>

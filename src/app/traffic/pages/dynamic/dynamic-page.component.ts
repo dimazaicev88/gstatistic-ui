@@ -1,21 +1,21 @@
 import {Component} from '@angular/core';
 import {PrimeTemplate} from "primeng/api";
-import {TabViewModule} from "primeng/tabview";
 import {TableModule, TablePageEvent} from "primeng/table";
+import {Visits} from "../../interfaces/visits";
 
 @Component({
-  selector: 'app-transitions-searchers-page',
+  selector: 'app-dynamic',
   standalone: true,
   imports: [
     PrimeTemplate,
-    TabViewModule,
     TableModule
   ],
-  templateUrl: './transitions-searchers-page.component.html',
-  styleUrl: './transitions-searchers-page.component.css'
+  templateUrl: './dynamic-page.component.html',
+  styleUrl: './dynamic-page.component.css'
 })
-export class TransitionsSearchersPageComponent {
-  rowsPerPage = 7;
+export class DynamicPageComponent {
+  visits: Visits[] = [];
+  rowsPerPage: number | undefined;
   totalRecords = 0;
   isLoading = false;
 

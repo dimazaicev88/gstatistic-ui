@@ -1,1 +1,40 @@
 <p>pages-page works!</p>
+<p-table
+  [value]="[]"
+  [lazy]="true"
+  [paginator]="true"
+  [rows]="rowsPerPage"
+  selectionMode="single"
+  [totalRecords]="totalRecords"
+  [loading]="isLoading"
+  [showCurrentPageReport]="true"
+  currentPageReportTemplate="Showing {totalRecords} entries"
+  [rowsPerPageOptions]="[rowsPerPage, 10,20,50,100]"
+  (onPage)="onPageChange($event)"
+  dataKey="uuid"
+  styleClass="p-datatable-sm p-datatable-gridlines">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Номер</th>
+      <th>Откуда пришли</th>
+      <th>Количество</th>
+      <th>%</th>
+      <th>Хитов в среднем</th>
+      <th>График</th>
+
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-visits>
+    <tr>
+      <!--      <td>{{ hit.uuid }}</td>-->
+      <!--      <td>{{ hit.sessionUuid }}</td>-->
+      <!--      <td>{{ hit.dateHit }}</td>-->
+      <!--      <td>{{ hit.userId }}</td>-->
+      <!--      <td>{{ hit.ip }}</td>-->
+      <!--      <td>{{ hit.countryName }}</td>-->
+      <!--      <td>{{ hit.countryId }}</td>-->
+      <!--      <td>{{ hit.url }}</td>-->
+      <!--      <td>{{ hit.siteId }}</td>-->
+    </tr>
+  </ng-template>
+</p-table>

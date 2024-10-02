@@ -24,7 +24,7 @@ export class LeftMenuComponent implements OnInit {
           {
             label: 'Сводная статистика',
             icon: 'pi pi-plus',
-            routerLink: ""
+            routerLink: "/"
           }
         ]
       },
@@ -45,11 +45,6 @@ export class LeftMenuComponent implements OnInit {
             label: 'Точки входа',
             icon: 'pi pi-search',
             routerLink: "/traffic/entry-points"
-          },
-          {
-            label: 'Пути по сайту',
-            icon: 'pi pi-search',
-            routerLink: "/traffic/site-path"
           },
           {
             label: 'Пути по сайту',

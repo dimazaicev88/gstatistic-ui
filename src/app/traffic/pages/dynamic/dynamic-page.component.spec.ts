@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DinamicPageComponent } from './dinamic-page.component';
+import { DynamicPageComponent } from './dynamic-page.component';
 
 describe('DinamicPageComponent', () => {
-  let component: DinamicPageComponent;
-  let fixture: ComponentFixture<DinamicPageComponent>;
+  let component: DynamicPageComponent;
+  let fixture: ComponentFixture<DynamicPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DinamicPageComponent]
+      imports: [DynamicPageComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DinamicPageComponent);
+    fixture = TestBed.createComponent(DynamicPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
