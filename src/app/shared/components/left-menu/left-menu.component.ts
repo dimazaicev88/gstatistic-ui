@@ -19,28 +19,36 @@ export class LeftMenuComponent implements OnInit {
   ngOnInit() {
     this.items = [
       {
-        label: 'Сводная статистика'
+        label: 'Сводная статистика',
+        url: ""
       },
       {
         label: 'Посещаемость',
+        url: ""
       },
       {
         label: 'Рекламные кампании',
+        url: ""
       },
       {
         label: 'События',
+        url: ""
       },
       {
         label: 'Поисковики',
+        url: ""
       },
       {
         label: 'Ссылающиеся сайты',
+        url: ""
       },
       {
         label: 'Посетители',
+        url: ""
       },
       {
         label: 'Кто на сайте',
+        url: ""
       }
     ];
   }
