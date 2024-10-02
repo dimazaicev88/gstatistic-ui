@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EntoryPointsPageComponent } from './entory-points-page.component';
+import { EntryPointsPageComponent } from './entry-points-page.component';
 
 describe('EntoryPointsPageComponent', () => {
-  let component: EntoryPointsPageComponent;
-  let fixture: ComponentFixture<EntoryPointsPageComponent>;
+  let component: EntryPointsPageComponent;
+  let fixture: ComponentFixture<EntryPointsPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [EntoryPointsPageComponent]
+      imports: [EntryPointsPageComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(EntoryPointsPageComponent);
+    fixture = TestBed.createComponent(EntryPointsPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AttentivenessPageComponent } from './attentiveness-page.component';
+import { RubricAndPagesPageComponent } from './rubric-and-pages-page.component';
 
 describe('AttentivenessPageComponent', () => {
-  let component: AttentivenessPageComponent;
-  let fixture: ComponentFixture<AttentivenessPageComponent>;
+  let component: RubricAndPagesPageComponent;
+  let fixture: ComponentFixture<RubricAndPagesPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AttentivenessPageComponent]
+      imports: [RubricAndPagesPageComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AttentivenessPageComponent);
+    fixture = TestBed.createComponent(RubricAndPagesPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

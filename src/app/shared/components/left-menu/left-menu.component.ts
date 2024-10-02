@@ -19,25 +19,134 @@ export class LeftMenuComponent implements OnInit {
   ngOnInit() {
     this.items = [
       {
-        label: 'Сводная статистика'
+        label: 'Сводная статистика',
+        routerLink: "/statistic"
       },
       {
         label: 'Посещаемость',
+        items: [
+          {
+            label: 'Динамика',
+            icon: 'pi pi-plus',
+            routerLink: "/traffic/dynamic"
+          },
+          {
+            label: 'Разделы и страницы',
+            icon: 'pi pi-search',
+            routerLink: "/traffic/rubric-and-pages"
+          },
+          {
+            label: 'Точки входа',
+            icon: 'pi pi-search',
+            routerLink: "/traffic/entry-points"
+          },
+          {
+            label: 'Пути по сайту',
+            icon: 'pi pi-search',
+            routerLink: "/traffic/site-path"
+          },
+          {
+            label: 'Пути по сайту',
+            icon: 'pi pi-search',
+            routerLink: "/traffic/site-path"
+          },
+          {
+            label: 'Внимательность',
+            icon: 'pi pi-search',
+            routerLink: "/traffic/attentiveness"
+          },
+          {
+            label: 'География по странам',
+            icon: 'pi pi-search',
+            routerLink: "/traffic/geography-country"
+          },
+          {
+            label: 'География по городам',
+            icon: 'pi pi-search',
+            routerLink: "/traffic/geography-cities"
+          }
+        ]
       },
       {
         label: 'Рекламные кампании',
+        items: [
+          {
+            label: 'Список кампаний',
+            icon: 'pi pi-plus',
+            routerLink: "/adv/list-company"
+          }, {
+            label: 'Сравнение кампаний',
+            icon: 'pi pi-plus',
+            routerLink: "/adv/compare-company"
+          },
+        ]
       },
       {
         label: 'События',
+        items: [
+          {
+            label: 'Типы событий',
+            icon: 'pi pi-plus',
+            routerLink: "/events/event-types"
+          }, {
+            label: 'События',
+            icon: 'pi pi-plus',
+            routerLink: "/events/events"
+          },
+        ]
       },
       {
         label: 'Поисковики',
+        items: [
+          {
+            label: 'Переходы с поисковиков',
+            icon: 'pi pi-plus',
+            routerLink: "/searchers/transitions-searchers"
+          },
+          {
+            label: 'Список фраз',
+            icon: 'pi pi-plus',
+            routerLink: "/searchers/search-phrases"
+          },
+          {
+            label: 'Индексация',
+            icon: 'pi pi-plus',
+            routerLink: "/searchers/indexing"
+          },
+          {
+            label: 'Автодетект',
+            icon: 'pi pi-plus',
+            routerLink: "/searchers/autodetect"
+          },
+        ]
       },
       {
         label: 'Ссылающиеся сайты',
+        items: [
+          {
+            label: 'Сайты',
+            icon: 'pi pi-plus',
+            routerLink: "/referring-sites/sites"
+          }, {
+            label: 'События',
+            icon: 'pi pi-plus',
+            routerLink: "/referring-sites/pages"
+          },
+          {
+            label: 'Переходы',
+            icon: 'pi pi-plus',
+            routerLink: "/referring-sites/transitions"
+          },
+        ]
       },
       {
-        label: 'Посетители',
+        label: 'Посетители', items: [
+          {
+            label: 'Сайты',
+            icon: 'pi pi-plus',
+            routerLink: "/referring-sites/sites"
+          },
+        ]
       },
       {
         label: 'Кто на сайте',
