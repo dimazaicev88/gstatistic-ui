@@ -9,10 +9,10 @@ import {TableModule} from "primeng/table";
     PrimeTemplate,
     TableModule
   ],
-  templateUrl: './events.component.html',
-  styleUrl: './events.component.css'
+  templateUrl: './events-page.component.html',
+  styleUrl: './events-page.component.css'
 })
-export class EventsComponent {
+export class EventsPageComponent {
   events: any[] = [];
 
 }
