@@ -133,4 +133,12 @@ export const routes: Routes = [
     loadComponent: () => import('./online/pages/online/online-page.component')
       .then(mod => mod.OnlinePageComponent),
   }
+  ,
+  {
+    path: 'settings',
+    loadComponent: () => import('./settings/pages/settings/settings-page.component')
+      .then(mod => mod.SettingsPageComponent),
+  }
+
+
 ];

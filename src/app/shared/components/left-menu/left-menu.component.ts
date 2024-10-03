@@ -142,7 +142,8 @@ export class LeftMenuComponent implements OnInit {
         ]
       },
       {
-        label: 'Посетители', items: [
+        label: 'Посетители',
+        items: [
           {
             label: 'Список посетителей',
             // icon: 'pi pi-plus',
@@ -168,6 +169,17 @@ export class LeftMenuComponent implements OnInit {
       {
         label: 'Кто на сайте',
         routerLink: "/online"
+      }
+      ,
+      {
+        label: 'Настройки',
+        items: [
+          {
+            label: 'Настройки',
+            // icon: 'pi pi-plus',
+            routerLink: "/settings"
+          },
+        ]
       }
     ];
   }
