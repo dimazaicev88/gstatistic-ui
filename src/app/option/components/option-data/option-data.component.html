@@ -1,0 +1,75 @@
+<div class="field grid">
+  <label for="saveVisits" class="col-fixed w-18rem">Сохранять статистику посещений разделов и файлов?</label>
+  <div class="col">
+    <p-checkbox name="saveVisits" binary="true" id="saveVisits" value=true [(ngModel)]="saveVisits" (onChange)="change()"></p-checkbox>
+  </div>
+</div>
+<div class="field grid">
+  <label for="savePathData" class="col-fixed w-18rem">Собирать данные для отчета "Пути по сайту"?</label>
+  <div class="col">
+    <p-checkbox id="savePathData" binary="true" value=true [(ngModel)]="savePathData"></p-checkbox>
+  </div>
+</div>
+<div class="field grid">
+  <label for="maxPathSteps" class="col-fixed w-18rem">Максимальная длина путей по сайту для хранения:</label>
+  <div class="col">
+    <input id="maxPathSteps" pInputText [(ngModel)]="maxPathSteps"/>
+  </div>
+</div>
+<div class="field grid">
+  <label for="importantPageParams" class="col-fixed w-18rem">Важные параметры страницы:</label>
+  <div class="col">
+    <input id="importantPageParams" pInputText [(ngModel)]="importantPageParams"/>
+  </div>
+</div>
+<div class="field grid">
+  <label for="browsers" class="col-fixed w-18rem">Маски для UserAgent браузеров:</label>
+  <div class="col">
+    <textarea id="browsers" pInputTextarea [(ngModel)]="browsers"></textarea>
+  </div>
+</div>
+<div class="field grid">
+  <label for="encodeEventGID" class="col-fixed w-18rem">Кодировать дополнительный параметр #EVENT_GID# для
+    событий:</label>
+  <div class="col">
+    <p-checkbox id="encodeEventGID" binary="true" value=true name="encodeEventGID" [(ngModel)]="encodeEventGID"></p-checkbox>
+  </div>
+</div>
+<div class="field grid">
+  <label for="siteGroupID" class="col-fixed w-18rem">Краткий идентификатор группы сайтов:</label>
+  <div class="col">
+    <input id="siteGroupID" pInputText [(ngModel)]="siteGroupID"/>
+  </div>
+</div>
+<div class="field grid">
+  <label for="siteGroupID" class="col-fixed w-18rem">Индексные страницы разделов:</label>
+  <div class="col">
+    <input id="directoryIndex" pInputText [(ngModel)]="directoryIndex"/>
+  </div>
+</div>
+<div class="field grid">
+  <label for="saveReferrers" class="col-fixed w-18rem">Сохранять статистику ссылающихся сайтов и поисковых
+    фраз?</label>
+  <div class="col">
+    <p-checkbox id="saveReferrers" binary="true" value=true name="saveReferrers" [(ngModel)]="saveReferrers"></p-checkbox>
+  </div>
+</div>
+
+<div class="field grid">
+  <label for="refererTop" class="col-fixed w-18rem">Не очищать из ссылающихся доменов первые (TOP):</label>
+  <div class="col">
+    <input id="refererTop" pInputText [(ngModel)]="refererTop"/>
+  </div>
+</div>
+
+<div class="field grid">
+  <label for="saveHit" class="col-fixed w-18rem">Сохранять хит?</label>
+  <div class="col">
+    <p-checkbox id="saveHit" binary="true" value=true [(ngModel)]="saveHits"></p-checkbox>
+  </div>
+</div>
+
+<!-- Buttons -->
+<div class="card flex justify-content-center">
+  <p-button label="Сохранить" (onClick)="save()"/>
+</div>

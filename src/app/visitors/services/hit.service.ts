@@ -9,7 +9,7 @@ import {Hit} from "../interfaces/hit";
   providedIn: 'root'
 })
 export class HitService {
-  private serverUrl = environment.serverUrl;
+  private serverUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) {
   }

@@ -135,9 +135,9 @@ export const routes: Routes = [
   }
   ,
   {
-    path: 'settings',
-    loadComponent: () => import('./settings/pages/settings/settings-page.component')
-      .then(mod => mod.SettingsPageComponent),
+    path: 'options',
+    loadComponent: () => import('./option/pages/options/options-page.component')
+      .then(mod => mod.OptionsPageComponent),
   }
 
 

@@ -177,7 +177,7 @@ export class LeftMenuComponent implements OnInit {
           {
             label: 'Настройки',
             // icon: 'pi pi-plus',
-            routerLink: "/settings"
+            routerLink: "/options"
           },
         ]
       }

@@ -1,0 +1,47 @@
+<div class="field grid">
+  <label class="col-fixed w-30rem">Использовать рекламную кампанию с referer1=NA, referer2=NA по умолчанию?</label>
+  <div class="col">
+    <p-checkbox name="advNa" binary="true" value=true [(ngModel)]="advNa"></p-checkbox>
+  </div>
+</div>
+<div class="field grid">
+  <label class="col-fixed w-30rem">Автоматически создавать рекламные кампании при наличии параметров referer1, referer2 в URL’е:</label>
+  <div class="col">
+    <p-checkbox name="advAutoCreate" binary="true" value=true [(ngModel)]="advAutoCreate"></p-checkbox>
+  </div>
+</div>
+<div class="field grid">
+  <label class="col-fixed w-30rem">Для автоматически создаваемых рекламных кампаний проверять, что referer1 и referer2 содержат только
+    символы латинского алфавита, цифры и символы "_-":</label>
+  <div class="col">
+    <p-checkbox name="refererCheck" binary="true" value=true [(ngModel)]="refererCheck"></p-checkbox>
+  </div>
+</div>
+<div class="field grid">
+  <label class="col-fixed w-30rem">Учитывать события рекламных кампаний для поисковиков:</label>
+  <div class="col">
+    <p-checkbox name="searcherEvents" binary="true" value=true [(ngModel)]="searcherEvents"></p-checkbox>
+  </div>
+</div>
+<div class="field grid">
+  <label class="col-fixed w-30rem">Синонимы referer1:</label>
+  <div class="col">
+    <input id="referer1Syn" [(ngModel)]="referer1Syn" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary">
+  </div>
+</div>
+<div class="field grid">
+  <label class="col-fixed w-30rem" >Синонимы referer2:</label>
+  <div class="col">
+    <input id="referer2Syn" [(ngModel)]="referer2Syn" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary">
+  </div>
+</div>
+<div class="field grid">
+  <label class="col-fixed w-30rem">Синонимы referer3:</label>
+  <div class="col">
+    <input id="referer3Syn" [(ngModel)]="referer3Syn" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary">
+  </div>
+</div>
+
+<div class="card flex justify-content-center">
+  <p-button label="Сохранить" (onClick)="save()"/>
+</div>
