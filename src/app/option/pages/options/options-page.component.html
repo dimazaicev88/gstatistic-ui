@@ -1,9 +1,4 @@
 <p-tabView>
-  <p-tabPanel header="Ограничение активности">
-    <div class="p-grid p-nogutter p-d-flex p-justify-center p-ai-center">
-      <app-limit-activity/>
-    </div>
-  </p-tabPanel>
   <p-tabPanel header="Рекламные кампании">
     <app-adv-company/>
   </p-tabPanel>
@@ -69,44 +64,6 @@
         <button pButton type="button" label="Сохранить" (click)="save()"></button>
         <button pButton type="button" label="По умолчанию" (click)="resetToDefault()"></button>
       </div>
-    </div>
-  </p-tabPanel>
-
-  <p-tabPanel header="Исключения">
-    <div class="p-fluid">
-      <h3>Исключения сбора статистики</h3>
-      <div class="p-field-radiobutton">
-        <p-radioButton name="exclusionRules" value="all" [(ngModel)]="selectedRule" inputId="rule1"></p-radioButton>
-        <label for="rule1"> Учитывать всех без исключения </label>
-      </div>
-      <div class="p-field-radiobutton">
-        <p-radioButton name="exclusionRules" value="groups" [(ngModel)]="selectedRule" inputId="rule2"></p-radioButton>
-        <label for="rule2"> Не учитывать пользователей из заданных групп </label>
-      </div>
-      <div class="p-field-radiobutton">
-        <p-radioButton name="exclusionRules" value="ip" [(ngModel)]="selectedRule" inputId="rule3"></p-radioButton>
-        <label for="rule3"> Исключить пользователей с определенных IP адресов </label>
-      </div>
-      <div class="p-field-radiobutton">
-        <p-radioButton name="exclusionRules" value="groupsip" [(ngModel)]="selectedRule"
-                       inputId="rule4"></p-radioButton>
-        <label for="rule4"> Исключить пользователей из определенных групп пользователей, зашедших с определенных IP
-          адресов </label>
-      </div>
-
-      <div *ngIf="selectedRule === 'groups' || selectedRule === 'groupsip'">
-        <p-multiSelect [options]="userGroups" [(ngModel)]="selectedGroups" optionLabel="name"
-                       defaultLabel="Выберите группы" display="chip"></p-multiSelect>
-      </div>
-
-      <div class="p-field" *ngIf="selectedRule === 'ip' || selectedRule === 'groupsip'">
-        <label for="ipRanges">Список диапазонов IP адресов исключений (один диапазон на строке):</label>
-        <textarea pInputTextarea id="ipRanges" [(ngModel)]="ipRangeList" [rows]="5"></textarea>
-        <small>Пример:<br>192.168.0.2-192.168.0.20<br>10.0.0.7-10.0.0.7</small>
-      </div>
-
-      <p-button label="Сохранить" (onClick)="save()"></p-button>
-      <p-button label="По умолчанию" (onClick)="resetToDefault()"></p-button>
     </div>
   </p-tabPanel>
 </p-tabView>

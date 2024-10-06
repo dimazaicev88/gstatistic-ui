@@ -10,7 +10,6 @@ import {RadioButtonModule} from "primeng/radiobutton";
 import {MultiSelectModule} from "primeng/multiselect";
 import {InputTextareaModule} from "primeng/inputtextarea";
 import {NgIf} from "@angular/common";
-import {LimitActivityComponent} from "../../components/limit-activity/limit-activity.component";
 import {AdvCompanyComponent} from "../../components/adv-company/adv-company.component";
 import {OptionDataComponent} from "../../components/option-data/option-data.component";
 
@@ -31,7 +30,6 @@ import {OptionDataComponent} from "../../components/option-data/option-data.comp
     MultiSelectModule,
     InputTextareaModule,
     NgIf,
-    LimitActivityComponent,
     AdvCompanyComponent,
     OptionDataComponent
   ],
@@ -50,11 +48,6 @@ export class OptionsPageComponent {
   referringPagesCount = 0;
   referringDomainsDays = 0;
   referringDomainsCount = 0;
-  selectedRule = "";
-  selectedGroups = [];
-  userGroups = [];
-  ipRangeList = [];
-
 
   save() {
 
